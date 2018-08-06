@@ -2,6 +2,9 @@
 
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE.md)
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://nodejs.org)
+
+
 
 
 A React front end for displaying a number of advertisements and videos for a fixed period of time before allowing 

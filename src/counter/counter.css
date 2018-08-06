@@ -1,0 +1,28 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.2);
+    flex: 1;
+}
+
+.counter-top {
+    flex: 1;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+.counter-timer {
+    flex: 3;
+    text-align: center;
+    font-size: 3.0rem;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.counter-units {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(0,0,0,0.5);
+}

@@ -1,0 +1,9 @@
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-active {
+    width: 98%;
+}
