@@ -33,9 +33,7 @@ TBD
 
 ## Authors
 
-This project exists thanks to all the people who contribute. 
-<a href="graphs/contributors">
-<img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
+* Vincent Ramdhanie
 
 ## License
 
