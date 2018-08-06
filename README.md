@@ -1,5 +1,9 @@
 # GIS Hotspot Login
 
+
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE.md)
+
+
 A React front end for displaying a number of advertisements and videos for a fixed period of time before allowing 
 the user access to the internet via a GIS R10 Hotspot gateway.
  
