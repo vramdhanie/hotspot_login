@@ -1,21 +1,38 @@
 {
-  "name": "temp",
-  "version": "0.1.0",
-  "private": true,
+  "name": "webpack-boilerplate",
+  "version": "4.0.0",
+  "description": "Plain webpack 4 Boilerplate with Babel, SASS and lodash on board",
+  "author": "Christoph von Gellhorn",
+  "license": "MIT",
+  "homepage": "https://github.com/cvgellhorn/webpack-boilerplate",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
+    "build": "webpack -p --progress --mode production --config webpack.config.build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://cvgellhorn@github.com/cvgellhorn/webpack-boilerplate.git"
+  },
   "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4",
+    "lodash": "4.17.10",
     "typeface-roboto": "^0.0.54"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
   "devDependencies": {
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1"
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.5",
+    "babel-preset-env": "1.7.0",
+    "clean-webpack-plugin": "0.1.19",
+    "cross-env": "5.2.0",
+    "css-loader": "1.0.0",
+    "file-loader": "1.1.11",
+    "html-webpack-plugin": "3.2.0",
+    "node-sass": "4.9.2",
+    "sass-loader": "7.0.3",
+    "style-loader": "0.21.0",
+    "url-loader": "1.0.1",
+    "webpack": "4.16.3",
+    "webpack-cli": "3.1.0",
+    "webpack-dev-server": "3.1.5",
+    "webpack-merge": "4.1.3"
   }
 }
