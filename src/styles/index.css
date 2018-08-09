@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+/* MAIN COMPONENT */
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-header {
+     background-color: #000000;
+     flex: 1;
+ }
+
+.main-title {
+     color: #FFFFFF;
+     text-align: center;
+     margin-top: 40px;
+ }
+
+.main-content {
+     padding: 5px;
+     flex: 5;
+     display: flex;
+     flex-direction: column;
+ }
+
+/* IMAGE COMPONENT */
+.image {
+    background-size: contain;
+    background: url('../images/wifi_v2.jpg') no-repeat center center;
+    height: 100%;
+    position: relative;
+}
+
+.image-active {
+     width: 90%;
+ }
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    flex: 1;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-shadow: 0 0 2px #000000;
+    color: #FFFFFF;
+    transition: opacity 3s;
+}
+
+/* COUNTER COMPONENT*/
+.counter-top {
+     flex: 1;
+     text-align: center;
+     font-size: 2.0rem;
+ }
+
+.counter-timer {
+     flex: 3;
+     text-align: center;
+     font-size: 3.0rem;
+     font-weight: bold;
+     line-height: 100%;
+ }
+
+.counter-units {
+     flex: 1;
+     text-align: center;
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: rgba(255,255,255,0.9);
+ }
+
+/* LOGIN COMPONENT*/
+.login {
+    opacity: 0;
+    transition: opacity 3s;
+    position: absolute;
+    bottom: 15%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
