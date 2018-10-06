@@ -28,19 +28,28 @@ yarn test
 
 ## Deployment
 
+Run 
+
+```bash
+yarn build
+```
+
+This copies all sources into the dist directory and creates a zip named
+login.zip which can then be deployed.
+
+
 TBD
 - build
 - zip
 - upload
 
 ## Built With
-
-* [React](reactjs.org) - The web framework
 * [Node](nodejs.org) - The build environment
 
 ## Authors
 
 * Vincent Ramdhanie
+* Anand Ramadhin
 
 ## License
 
