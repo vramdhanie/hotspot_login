@@ -7,7 +7,7 @@
   "homepage": "https://github.com/cvgellhorn/webpack-boilerplate",
   "scripts": {
     "dev": "npx lite-server --baseDir='src'",
-    "build": "rm -r dist && mkdir dist && cp -r src/ dist/ && cp dist/index.html dist/login.html && cd dist && zip -r login.zip *"
+    "build": "rm -r dist && mkdir dist && cp -r src/ dist/  && cd dist && zip -r login.zip *"
   },
   "repository": {
     "type": "git",
