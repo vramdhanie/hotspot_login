@@ -28,7 +28,7 @@ body {
 
 	/*<!--Start of Slideshow CSS -->*/
 body {
-    min-height: 100vh;
+    min-height: 100%;
   margin: 0;
 }
 
@@ -58,7 +58,8 @@ body {
 .slider {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
+    height: 100px;
   text-align: center;
   margin: 0 auto;
   cursor: pointer;
@@ -104,8 +105,8 @@ background-image: url("img3.jpg");
   -ms-user-select: none;
   user-select: none;
   display: block;
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 80vh;
   top: 12vw;
   font-size: 10vw;
   line-height: 100vh;
@@ -155,9 +156,10 @@ a[class|="arrow"] {
 <!-------------------------------------------------------------------------------> 
 <body>  
 
-<div id="counter"><h1> The download will begin in <span id="countdowntimer">10 </span> Seconds</h1></div>    
-    
+ 
+    <h1><center>Steve's Electronics</center></h1>
 <div id="hide" style="visibility: visible">
+    
 <!--Start of ads slideshow-->
 <div class="slider">
   <div class="slide slide1"><span></span></div>
@@ -168,6 +170,8 @@ a[class|="arrow"] {
 
 <!--End of ads slideshow-->
  </div>
+    
+<div id="counter"><h1> The download will begin in <span id="countdowntimer">10 </span> Seconds</h1></div>   
     
 <center><div id="show" style="visibility: hidden"><!--LOGIN--></div></center>
     
@@ -180,7 +184,8 @@ function hideAds() {
 }
     
 function showLogin() {  
-  document.getElementById("show").style.visibility = "visible";  
+  document.getElementById("show").style.visibility = "visible";
+    document.getElementById("counter").style.visibility = "hidden";
 }
 
 //Start of Slideshow JS
