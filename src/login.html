@@ -77,17 +77,18 @@ body {
   float: left;
   box-sizing: border-box;
   background-size: 100% auto;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
 }
 .slider .slider-inner .slide.slide1 {
-background-image: url("https://box543.bluehost.com:2083/cpsess5064194921/viewer/home1%2fstevesel%2fpublic_html%2fhotspot/img1.jpg");
+background-image: url("https://steveselectronics.biz/hotspot/img1.jpg");
 }
 .slider .slider-inner .slide.slide2 {
-background-image: url("https://box543.bluehost.com:2083/cpsess5064194921/viewer/home1%2fstevesel%2fpublic_html%2fhotspot/img2.jpg");
+background-image: url("https://steveselectronics.biz/hotspot/img2.jpg");
 }
 .slider .slider-inner .slide.slide3 {
-background-image: url("https://box543.bluehost.com:2083/cpsess5064194921/viewer/home1%2fstevesel%2fpublic_html%2fhotspot/img3.jpg");
+background-image: url("https://steveselectronics.biz/hotspot/img3.jpg");
 }
 .slider .slider-inner .slide.slide4 {
 }
@@ -149,6 +150,20 @@ a[class|="arrow"] {
 }
 	/*<!--End of Slideshow CSS -->*/
 
+#show {
+  width: 80%;
+  margin: 0 auto;
+  display: none;
+}
+
+#counter {
+  text-align: center;
+}
+
+.heading {
+  font-size: 2em;
+  text-align: center;
+}
 </style>  
 <!------------------------------------------------------------------------------->    
 
@@ -157,7 +172,7 @@ a[class|="arrow"] {
 <body>  
 
  
-    <h1><center>Steve's Electronics</center></h1>
+<h1 class="heading">Steve's Electronics</h1>
 <div id="hide" style="visibility: visible">
     
 <!--Start of ads slideshow-->
@@ -171,9 +186,9 @@ a[class|="arrow"] {
 <!--End of ads slideshow-->
  </div>
     
-<div id="counter"><h1> The download will begin in <span id="countdowntimer">10 </span> Seconds</h1></div>   
+<div id="counter"><h1> Access the Internet in <span id="countdowntimer">10 </span> Seconds</h1></div>   
     
-<center><div id="show" style="visibility: hidden"><!--LOGIN--></div></center>
+<div id="show"><!--LOGIN--></div>
     
 <!----------------------------------------------------------------------------------------------------------->
 <!-- Start of JS -->
@@ -184,8 +199,8 @@ function hideAds() {
 }
     
 function showLogin() {  
-  document.getElementById("show").style.visibility = "visible";
-    document.getElementById("counter").style.visibility = "hidden";
+  document.getElementById("show").style.display = "block";
+  document.getElementById("counter").style.visibility = "hidden";
 }
 
 //Start of Slideshow JS
