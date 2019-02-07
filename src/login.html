@@ -150,6 +150,7 @@ a[class|="arrow"] {
 }
 	/*<!--End of Slideshow CSS -->*/
 
+<<<<<<< HEAD
 #show {
   width: 80%;
   margin: 0 auto;
@@ -164,6 +165,32 @@ a[class|="arrow"] {
   font-size: 2em;
   text-align: center;
 }
+=======
+    /*Counter*/
+
+    #counter {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 20vh;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    #counter h1 {
+        color: #FFFFFF;
+        text-shadow: #000000;
+        text-align: center;
+    }
+
+    /* Heading */
+    .heading {
+        background-color: #000000;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 5px;
+    }
+
+>>>>>>> e95642888348cce18b29796026e9cd8ba0eed35a
 </style>  
 <!------------------------------------------------------------------------------->    
 
@@ -171,10 +198,21 @@ a[class|="arrow"] {
 <!-------------------------------------------------------------------------------> 
 <body>  
 
+<<<<<<< HEAD
  
 <h1 class="heading">Steve's Electronics</h1>
 <div id="hide" style="visibility: visible">
+=======
+<div id="counter">
+    <h1> Access the internet in <span id="countdowntimer">10 </span> Seconds</h1>
+</div>
+>>>>>>> e95642888348cce18b29796026e9cd8ba0eed35a
     
+<div id="hide" style="visibility: visible">
+    <div class="heading">
+        <h1>Steve's Electronics</h1>
+        <p class="statement">Welcome to Steve's Electronics</p>
+    </div>
 <!--Start of ads slideshow-->
 <div class="slider">
   <div class="slide slide1"><span></span></div>
@@ -186,9 +224,13 @@ a[class|="arrow"] {
 <!--End of ads slideshow-->
  </div>
     
+<<<<<<< HEAD
 <div id="counter"><h1> Access the Internet in <span id="countdowntimer">10 </span> Seconds</h1></div>   
     
 <div id="show"><!--LOGIN--></div>
+=======
+<div id="show" style="visibility: hidden"><!--LOGIN--></div>
+>>>>>>> e95642888348cce18b29796026e9cd8ba0eed35a
     
 <!----------------------------------------------------------------------------------------------------------->
 <!-- Start of JS -->
@@ -532,8 +574,6 @@ var slider = new slider_plugin({
   arrowRight: $('.arrow-right')
 });
 
-
-
 //End of Slideshow JS
 
 setTimeout("hideAds()", 10000); // after 10 sec  
@@ -542,12 +582,13 @@ setTimeout("showLogin()", 10001); // after 10 sec
 //Countdown Timer
 var timeleft = 10;
 var downloadTimer = setInterval(function(){
-timeleft--;
-document.getElementById("countdowntimer").textContent = timeleft;
-    if(timeleft <= 0)
-        clearInterval(downloadTimer);
-        //document.getElementById("counter").style.visibility = "hidden";
-                                            },1000);
+  timeleft--;
+  document.getElementById("countdowntimer").textContent = timeleft;
+  if(timeleft <= 0) {
+    clearInterval(downloadTimer);
+    document.getElementById("counter").style.visibility = "hidden";
+  }
+},1000);
 </script>  
 <!-- End of JS -->
 <!----------------------------------------------------------------------------------------------------------->
