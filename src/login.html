@@ -149,6 +149,30 @@ a[class|="arrow"] {
 }
 	/*<!--End of Slideshow CSS -->*/
 
+    /*Counter*/
+
+    #counter {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 20vh;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    #counter h1 {
+        color: #FFFFFF;
+        text-shadow: #000000;
+        text-align: center;
+    }
+
+    /* Heading */
+    .heading {
+        background-color: #000000;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 5px;
+    }
+
 </style>  
 <!------------------------------------------------------------------------------->    
 
@@ -156,10 +180,15 @@ a[class|="arrow"] {
 <!-------------------------------------------------------------------------------> 
 <body>  
 
- 
-    <h1><center>Steve's Electronics</center></h1>
-<div id="hide" style="visibility: visible">
+<div id="counter">
+    <h1> Access the internet in <span id="countdowntimer">10 </span> Seconds</h1>
+</div>
     
+<div id="hide" style="visibility: visible">
+    <div class="heading">
+        <h1>Steve's Electronics</h1>
+        <p class="statement">Welcome to Steve's Electronics</p>
+    </div>
 <!--Start of ads slideshow-->
 <div class="slider">
   <div class="slide slide1"><span></span></div>
@@ -171,9 +200,7 @@ a[class|="arrow"] {
 <!--End of ads slideshow-->
  </div>
     
-<div id="counter"><h1> The download will begin in <span id="countdowntimer">10 </span> Seconds</h1></div>   
-    
-<center><div id="show" style="visibility: hidden"><!--LOGIN--></div></center>
+<div id="show" style="visibility: hidden"><!--LOGIN--></div>
     
 <!----------------------------------------------------------------------------------------------------------->
 <!-- Start of JS -->
@@ -517,8 +544,6 @@ var slider = new slider_plugin({
   arrowRight: $('.arrow-right')
 });
 
-
-
 //End of Slideshow JS
 
 setTimeout("hideAds()", 10000); // after 10 sec  
@@ -527,12 +552,13 @@ setTimeout("showLogin()", 10001); // after 10 sec
 //Countdown Timer
 var timeleft = 10;
 var downloadTimer = setInterval(function(){
-timeleft--;
-document.getElementById("countdowntimer").textContent = timeleft;
-    if(timeleft <= 0)
-        clearInterval(downloadTimer);
-        //document.getElementById("counter").style.visibility = "hidden";
-                                            },1000);
+  timeleft--;
+  document.getElementById("countdowntimer").textContent = timeleft;
+  if(timeleft <= 0) {
+    clearInterval(downloadTimer);
+    document.getElementById("counter").style.visibility = "hidden";
+  }
+},1000);
 </script>  
 <!-- End of JS -->
 <!----------------------------------------------------------------------------------------------------------->

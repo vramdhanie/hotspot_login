@@ -1,20 +1,17 @@
 {
-  "name": "webpack-boilerplate",
-  "version": "4.0.0",
-  "description": "Plain webpack 4 Boilerplate with Babel, SASS and lodash on board",
-  "author": "Christoph von Gellhorn",
+  "name": "gis-hotspot-login",
+  "version": "0.0.1",
+  "description": "Hotspot login page for the GIS Hotspot device",
+  "author": "Vincent Ramdhanie",
   "license": "MIT",
-  "homepage": "https://github.com/cvgellhorn/webpack-boilerplate",
+  "homepage": "https://github.com/vramdhanie/hotspot_login",
   "scripts": {
     "dev": "npx lite-server --baseDir='src'",
     "build": "rm -r dist && mkdir dist && cp -r src/ dist/  && cd dist && zip -r login.zip *"
   },
   "repository": {
     "type": "git",
-    "url": "https://cvgellhorn@github.com/cvgellhorn/webpack-boilerplate.git"
+    "url": "https://github.com/vramdhanie/hotspot_login"
   },
-  "dependencies": {
-    "typeface-roboto": "^0.0.54"
-  },
-  "devDependencies": {}
+  "licenses": "MIT"
 }
