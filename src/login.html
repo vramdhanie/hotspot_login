@@ -19,13 +19,6 @@ body {
       margin: 0 auto;*/  
  }  
   
-    #show {
-	position: absolute;
-    left: 40%;
-    top: 40%;
-	z-index : 0;
-    }
-
 	/*<!--Start of Slideshow CSS -->*/
 body {
     min-height: 100%;
@@ -95,7 +88,7 @@ background-image: url("https://steveselectronics.biz/hotspot/img3.jpg");
 .slider .slider-inner .slide.slide5 {
 }
 .slider .slider-inner .slide img {
-  display: block;
+  /*display: block;*/
   width: 100%;
 }
 .slider .slider-inner .slide span {
@@ -120,7 +113,6 @@ a[class|="arrow"] {
   position: absolute;
   display: block;
   top: 50%;
-  margin-top: -20px;
   width: 40px;
   height: 40px;
 }
@@ -150,11 +142,16 @@ a[class|="arrow"] {
 }
 	/*<!--End of Slideshow CSS -->*/
 
-<<<<<<< HEAD
+.bottom > * {
+  vertical-align: bottom;
+}
+    
 #show {
-  width: 80%;
-  margin: 0 auto;
-  display: none;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+	z-index : 0;
+    display: none;
 }
 
 #counter {
@@ -165,7 +162,7 @@ a[class|="arrow"] {
   font-size: 2em;
   text-align: center;
 }
-=======
+
     /*Counter*/
 
     #counter {
@@ -190,7 +187,6 @@ a[class|="arrow"] {
         padding: 5px;
     }
 
->>>>>>> e95642888348cce18b29796026e9cd8ba0eed35a
 </style>  
 <!------------------------------------------------------------------------------->    
 
@@ -198,16 +194,6 @@ a[class|="arrow"] {
 <!-------------------------------------------------------------------------------> 
 <body>  
 
-<<<<<<< HEAD
- 
-<h1 class="heading">Steve's Electronics</h1>
-<div id="hide" style="visibility: visible">
-=======
-<div id="counter">
-    <h1> Access the internet in <span id="countdowntimer">10 </span> Seconds</h1>
-</div>
->>>>>>> e95642888348cce18b29796026e9cd8ba0eed35a
-    
 <div id="hide" style="visibility: visible">
     <div class="heading">
         <h1>Steve's Electronics</h1>
@@ -218,19 +204,19 @@ a[class|="arrow"] {
   <div class="slide slide1"><span></span></div>
   <div class="slide slide2"><span></span></div>
   <div class="slide slide3"><span></span></div>
+    
 </div><a class="arrow-left" href="javascript:void(0);"></a><a class="arrow-right" href="javascript:void(0);"></a>
 <div class="dots-wrapper"></div>
-
 <!--End of ads slideshow-->
  </div>
     
-<<<<<<< HEAD
+<div id="show" ><!--LOGIN--></div>
+    
 <div id="counter"><h1> Access the Internet in <span id="countdowntimer">10 </span> Seconds</h1></div>   
     
-<div id="show"><!--LOGIN--></div>
-=======
-<div id="show" style="visibility: hidden"><!--LOGIN--></div>
->>>>>>> e95642888348cce18b29796026e9cd8ba0eed35a
+
+
+
     
 <!----------------------------------------------------------------------------------------------------------->
 <!-- Start of JS -->
@@ -241,7 +227,7 @@ function hideAds() {
 }
     
 function showLogin() {  
-  document.getElementById("show").style.display = "block";
+  document.getElementById("show").style.display = "inline-block";
   document.getElementById("counter").style.visibility = "hidden";
 }
 
@@ -576,7 +562,7 @@ var slider = new slider_plugin({
 
 //End of Slideshow JS
 
-setTimeout("hideAds()", 10000); // after 10 sec  
+//setTimeout("hideAds()", 10000); // after 10 sec  
 setTimeout("showLogin()", 10001); // after 10 sec  
     
 //Countdown Timer
@@ -593,5 +579,5 @@ var downloadTimer = setInterval(function(){
 <!-- End of JS -->
 <!----------------------------------------------------------------------------------------------------------->
     
-</body>  
-</html> 
+</body> 
+</html>
