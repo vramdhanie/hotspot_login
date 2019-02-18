@@ -147,11 +147,14 @@ a[class|="arrow"] {
 }
     
 #show {
-    position: absolute;
-    left: 40%;
-    top: 30%;
-	z-index : 0;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 20vh;
+	  z-index : 0;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 #counter {
@@ -170,13 +173,17 @@ a[class|="arrow"] {
         bottom: 0;
         width: 100vw;
         height: 20vh;
-        background-color: rgba(0,0,0,0.2);
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
     }
 
     #counter h1 {
-        color: #FFFFFF;
+        color:#000000;
         text-shadow: #000000;
         text-align: center;
+        width: 90%;
+        font-size: 3em;
     }
 
     /* Heading */
@@ -210,7 +217,9 @@ a[class|="arrow"] {
 <!--End of ads slideshow-->
  </div>
     
-<div id="show" ><!--LOGIN--></div>
+<div id="show" >
+  <!--LOGIN-->
+</div>
     
 <div id="counter"><h1> Access the Internet in <span id="countdowntimer">10 </span> Seconds</h1></div>   
     
@@ -227,7 +236,7 @@ function hideAds() {
 }
     
 function showLogin() {  
-  document.getElementById("show").style.display = "inline-block";
+  document.getElementById("show").style.display = "flex";
   document.getElementById("counter").style.visibility = "hidden";
 }
 
