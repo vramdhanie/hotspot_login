@@ -84,8 +84,10 @@ background-image: url("https://steveselectronics.biz/hotspot/img2.jpg");
 background-image: url("https://steveselectronics.biz/hotspot/img3.jpg");
 }
 .slider .slider-inner .slide.slide4 {
+  background-image: url("https://steveselectronics.biz/hotspot/img4.jpg");
 }
 .slider .slider-inner .slide.slide5 {
+  background-image: url("https://steveselectronics.biz/hotspot/img5.jpg");
 }
 .slider .slider-inner .slide img {
   /*display: block;*/
@@ -150,11 +152,27 @@ a[class|="arrow"] {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    height: 20vh;
-	  z-index : 0;
+    height: 30vh;
+	  z-index : 20;
     display: none;
     justify-content: center;
     align-items: center;
+}
+
+#show > table {
+  width: 60%;
+}
+
+#show > table table {
+  width: 100%;
+}
+
+#show form {
+  font-size: 2em;
+}
+
+#show form input {
+  font-size: 1.2em !important;
 }
 
 #counter {
@@ -204,13 +222,15 @@ a[class|="arrow"] {
 <div id="hide" style="visibility: visible">
     <div class="heading">
         <h1>Steve's Electronics</h1>
-        <p class="statement">Welcome to Steve's Electronics</p>
+        <p class="statement">Steve’s Electronics FREE WiFi</p>
     </div>
 <!--Start of ads slideshow-->
 <div class="slider">
   <div class="slide slide1"><span></span></div>
   <div class="slide slide2"><span></span></div>
   <div class="slide slide3"><span></span></div>
+  <div class="slide slide4"><span></span></div>
+  <div class="slide slide5"><span></span></div>
     
 </div><a class="arrow-left" href="javascript:void(0);"></a><a class="arrow-right" href="javascript:void(0);"></a>
 <div class="dots-wrapper"></div>
@@ -221,7 +241,7 @@ a[class|="arrow"] {
   <!--LOGIN-->
 </div>
     
-<div id="counter"><h1> Access the Internet in <span id="countdowntimer">10 </span> Seconds</h1></div>   
+<div id="counter"><h1> Access the Internet in <span id="countdowntimer">20 </span> Seconds</h1></div>   
     
 
 
@@ -575,7 +595,7 @@ var slider = new slider_plugin({
 setTimeout("showLogin()", 10001); // after 10 sec  
     
 //Countdown Timer
-var timeleft = 10;
+var timeleft = 20;
 var downloadTimer = setInterval(function(){
   timeleft--;
   document.getElementById("countdowntimer").textContent = timeleft;
