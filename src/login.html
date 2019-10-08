@@ -1,24 +1,24 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-<html xmlns="http://www.w3.org/1999/xhtml">  
-<head>  
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <!--Rev 2 with touch slideshow -->
-<!------------------------------------------------------------------------------->    
-<style type="text/css">  
-body {  
-     background-color:#FFF;  
-}  
-  
-/* style for hidden div */  
- #hide {  
-      /*border: 1px solid black;   
-      width: 400px;  
-      height: 400px;  
-      padding: 10px;  
-      margin: 0 auto;*/  
- }  
-  
+<!------------------------------------------------------------------------------->
+<style type="text/css">
+body {
+     background-color:#FFF;
+}
+
+/* style for hidden div */
+ #hide {
+      /*border: 1px solid black;
+      width: 400px;
+      height: 400px;
+      padding: 10px;
+      margin: 0 auto;*/
+ }
+
 	/*<!--Start of Slideshow CSS -->*/
 body {
     min-height: 100%;
@@ -147,7 +147,7 @@ a[class|="arrow"] {
 .bottom > * {
   vertical-align: bottom;
 }
-    
+
 #show {
     position: fixed;
     bottom: 0;
@@ -212,12 +212,12 @@ a[class|="arrow"] {
         padding: 5px;
     }
 
-</style>  
-<!------------------------------------------------------------------------------->    
+</style>
+<!------------------------------------------------------------------------------->
 
 </head>
-<!-------------------------------------------------------------------------------> 
-<body>  
+<!------------------------------------------------------------------------------->
+<body>
 
 <div id="hide" style="visibility: visible">
     <div class="heading">
@@ -231,22 +231,22 @@ a[class|="arrow"] {
   <div class="slide slide3"><span></span></div>
   <div class="slide slide4"><span></span></div>
   <div class="slide slide5"><span></span></div>
-    
+
 </div><a class="arrow-left" href="javascript:void(0);"></a><a class="arrow-right" href="javascript:void(0);"></a>
 <div class="dots-wrapper"></div>
 <!--End of ads slideshow-->
  </div>
-    
+
 <div id="show" >
   <!--LOGIN-->
 </div>
-    
-<div id="counter"><h1> Access the Internet in <span id="countdowntimer">20 </span> Seconds</h1></div>   
-    
+
+<div id="counter"><h1> Access the Internet in <span id="countdowntimer">20 </span> Seconds</h1></div>
 
 
 
-    
+
+
 <!----------------------------------------------------------------------------------------------------------->
 <!-- Start of JS -->
 <script type="text/javascript">
@@ -254,8 +254,8 @@ a[class|="arrow"] {
 function hideAds() {
     document.getElementById("hide").style.visibility = "hidden";
 }
-    
-function showLogin() {  
+
+function showLogin() {
   document.getElementById("show").style.display = "flex";
   document.getElementById("counter").style.visibility = "hidden";
 }
@@ -414,7 +414,7 @@ var slider_plugin = (function() {
     _.sliderInner.appendChild(cloneFirst);
     var cloneLast = _.def.target.querySelectorAll('.slide')[_.totalSlides - 1].cloneNode(true);
     _.sliderInner.insertBefore(cloneLast, _.sliderInner.firstChild);
-   
+
     _.curSlide++;
     _.allSlides = _.def.target.querySelectorAll('.slide');
 
@@ -591,9 +591,9 @@ var slider = new slider_plugin({
 
 //End of Slideshow JS
 
-//setTimeout("hideAds()", 10000); // after 10 sec  
-setTimeout("showLogin()", 10001); // after 10 sec  
-    
+//setTimeout("hideAds()", 10000); // after 10 sec
+//setTimeout("showLogin()", 10001); // after 10 sec
+
 //Countdown Timer
 var timeleft = 20;
 var downloadTimer = setInterval(function(){
@@ -602,11 +602,12 @@ var downloadTimer = setInterval(function(){
   if(timeleft <= 0) {
     clearInterval(downloadTimer);
     document.getElementById("counter").style.visibility = "hidden";
+    showLogin();
   }
 },1000);
-</script>  
+</script>
 <!-- End of JS -->
 <!----------------------------------------------------------------------------------------------------------->
-    
-</body> 
+
+</body>
 </html>
